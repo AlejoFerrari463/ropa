@@ -1,0 +1,163 @@
+.contenedorWpp {
+  display: flex;
+  position: sticky;
+  margin-right: 100%;
+  z-index: 999;
+  top: 90%;
+}
+
+.botonWpp {
+  height: 7vh;
+  object-fit: contain;
+}
+
+.botonWpp:hover {
+  filter: contrast(70%);
+  transition: 1s;
+}
+
+/* GENERALES - INICIO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle, #fff, #ccc);
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #23714D;
+}
+
+h2 {
+  color: #D65780;
+}
+
+/* GENERALES - FIN */
+/* HEADER - INICIO */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fondoNav {
+  background-color: #1C1C1C;
+}
+
+.logoPagina {
+  height: 70px;
+  box-shadow: 1px 1px 15px pink;
+}
+
+.texto {
+  color: #F1CCBA;
+}
+
+.texto:hover {
+  color: #F5844F;
+}
+
+.achicarIconoHamburgesa {
+  width: 55px;
+}
+
+.navbar-toggler {
+  border: 2px solid #D65780;
+}
+
+/* HEADER - FIN */
+.carrouselTam {
+  height: 55vh;
+  object-fit: contain;
+  background-color: #EEEFED;
+}
+
+.carousel {
+  margin: 0 50px;
+}
+
+.resaltada {
+  color: #23714D;
+}
+
+/* CARDS - INICIO */
+.decorationNone {
+  text-decoration: none;
+}
+
+.card-img-top {
+  height: 60vh;
+  object-fit: contain;
+}
+
+.card {
+  box-shadow: 6px 4px 10px #F1CCBA;
+  margin-bottom: 40px;
+}
+
+.buttonCancel {
+  background-color: #F7A985;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.buttonCancel:hover {
+  background-color: #F1CCBA;
+  color: white;
+}
+
+.button {
+  background-color: #23714D;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.button:hover {
+  background-color: #024B34;
+  color: white;
+}
+
+/* CARDS - FIN */
+.borde {
+  padding-top: 40px;
+  border-top: 2px solid #D65780;
+}
+
+.link {
+  color: #23714D;
+  font-weight: bold;
+}
+
+.link:visited {
+  color: #FFB1E1;
+}
+
+/* MEDIA QUERIES - INICIO */
+@media (min-width: 992px) {
+  .paddingCorrec {
+    padding-right: 110px;
+  }
+}
+@media (max-width: 992px) {
+  .carousel {
+    margin: 0 0;
+  }
+}
+/* MEDIA QUERIES - FIN */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.contenedorWpp {
+
+    display: flex;
+    position: sticky;
+    margin-right: 100%;
+    z-index: 999;
+    top: 90%;
+
+    
+
+}
+
+
+.botonWpp {
+
+    height: 7vh;
+    object-fit: contain;
+ 
+}
+
+.botonWpp:hover {
+    
+    filter:contrast(70%);
+    transition: 1s;
+
+}

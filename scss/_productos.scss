@@ -1,0 +1,73 @@
+/* CARDS - INICIO */
+
+.decorationNone {
+
+    text-decoration: none;
+
+}
+
+.card-img-top {
+
+    height: 60vh;
+    object-fit: contain;
+
+}
+
+.card {
+
+    box-shadow: 6px 4px 10px #F1CCBA;
+    
+    margin-bottom: 40px;
+
+}
+
+.buttonCancel {
+
+
+    background-color: #F7A985;
+
+    border-radius: 5px;
+
+    border: none;
+
+    padding: 10px;
+
+    color: white;
+
+    font-weight: bolder;
+
+}
+
+.buttonCancel:hover {
+
+    background-color: #F1CCBA;
+
+    color: white;
+
+}
+
+.button {
+
+    background-color: #23714D;
+
+    border-radius: 5px;
+
+    border: none;
+
+    padding: 10px;
+
+    color: white;
+
+    font-weight: bolder;
+
+}
+
+.button:hover {
+
+    background-color: #024B34;
+
+    color: white;
+
+}
+
+/* CARDS - FIN */
