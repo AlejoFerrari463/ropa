@@ -1,0 +1,43 @@
+.formulario {
+
+    border: none;
+    border-bottom: 2px solid #D65780;
+    width: 100%;
+    padding: 5px; 
+    
+
+}
+
+.formulario:focus {
+    background: linear-gradient(to top, #F7D8E2, white);
+    outline: none;
+}
+
+.textoArea {
+
+    height: 200px;
+
+}
+
+
+.pregunta {
+
+    display: inline-block;
+    font-size: large;
+
+}
+
+
+
+.pregunta:hover + .respuesta {
+
+    display: block;
+    margin-left: 92%;
+    background-color: #D65780;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+
+
