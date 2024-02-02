@@ -147,6 +147,10 @@ nav {
   color: #FFB1E1;
 }
 
+.contenedorFomulario {
+  box-shadow: 2px 4px 10px black;
+}
+
 .formulario {
   border: none;
   border-bottom: 2px solid #D65780;
@@ -160,20 +164,24 @@ nav {
 }
 
 .textoArea {
-  height: 200px;
+  height: 300px;
+  resize: none;
 }
 
 .pregunta {
   display: inline-block;
   font-size: large;
+  font-weight: bold;
 }
 
 .pregunta:hover + .respuesta {
   display: block;
-  margin-left: 92%;
-  background-color: #D65780;
-  font-size: large;
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.pa {
+  padding: 20px 70px;
 }
 
 /* MEDIA QUERIES - INICIO */
@@ -185,6 +193,20 @@ nav {
 @media (max-width: 992px) {
   .carousel {
     margin: 0 0;
+  }
+  .pa {
+    padding: 20px 0px;
+  }
+  .contenedorFomulario {
+    box-shadow: none;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
 /* MEDIA QUERIES - FIN */

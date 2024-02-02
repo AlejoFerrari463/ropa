@@ -1,3 +1,9 @@
+.contenedorFomulario {
+
+    box-shadow: 2px 4px 10px black;
+
+}
+
 .formulario {
 
     border: none;
@@ -15,7 +21,8 @@
 
 .textoArea {
 
-    height: 200px;
+    height: 300px;
+    resize: none;
 
 }
 
@@ -24,6 +31,7 @@
 
     display: inline-block;
     font-size: large;
+    font-weight: bold;
 
 }
 
@@ -32,12 +40,14 @@
 .pregunta:hover + .respuesta {
 
     display: block;
-    margin-left: 92%;
-    background-color: #D65780;
-    font-size: large;
     font-weight: bold;
+    text-decoration: underline;
 
 }
 
+.pa {
 
+    padding: 20px 70px;
+
+}
 
