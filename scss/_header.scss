@@ -19,7 +19,7 @@ nav {
 
 .fondoNav {
 
-    background-color: #1C1C1C;
+    background-color: $color-fondo;
     
 
 }
@@ -28,14 +28,14 @@ nav {
 
     height: 70px;
 
-    box-shadow: 1px 1px 12px #D65780;
+    box-shadow: 1px 1px 12px $color-secundario;
      
 
 }
 
 .texto {
 
-    color: #F1CCBA;
+    color: $color-terciario;
     
 }
 
@@ -55,7 +55,7 @@ nav {
 
 .navbar-toggler {
 
-    border: 2px solid #D65780;
+    border: 2px solid $color-secundario;
 
 }
 

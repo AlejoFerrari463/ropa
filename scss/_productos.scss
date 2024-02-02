@@ -15,7 +15,7 @@
 
 .card {
 
-    box-shadow: 6px 4px 10px #F1CCBA;
+    box-shadow: 6px 4px 10px $color-terciario;
     
     margin-bottom: 40px;
 
@@ -40,7 +40,7 @@
 
 .buttonCancel:hover {
 
-    background-color: #F1CCBA;
+    background-color: $color-terciario;
 
     color: white;
 
@@ -48,7 +48,7 @@
 
 .button {
 
-    background-color: #23714D;
+    background-color: $color-principal;
 
     border-radius: 5px;
 
