@@ -1,7 +1,7 @@
 .contenedorWpp {
-  display: flex;
+  display: grid;
   position: sticky;
-  margin-right: 100%;
+  justify-content: end;
   z-index: 999;
   bottom: 30px;
 }
