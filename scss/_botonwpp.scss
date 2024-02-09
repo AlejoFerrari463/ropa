@@ -1,17 +1,15 @@
 .contenedorWpp {
 
-    display: grid;
-    justify-content: start;
+    position: fixed;
     z-index: 999;
-    position: sticky;
-    margin-top: 60px;
-    top: 93%;
+    bottom: 30px;
+
 }
 
 
 .botonWpp {
 
-    width: 50px;
+    width:50px;
     object-fit: contain;
  
 }
