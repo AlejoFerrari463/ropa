@@ -1,5 +1,6 @@
 .contenedorWpp {
   display: grid;
+  display: grid;
   position: sticky;
   justify-content: end;
   z-index: 999;
