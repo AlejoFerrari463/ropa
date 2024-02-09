@@ -3,7 +3,10 @@
   justify-content: start;
   z-index: 999;
   position: sticky;
-  bottom: 0px;
+  background-color: red;
+  margin-right: 100%;
+  bottom: 20px;
+  margin-left: 10px;
 }
 
 .botonWpp {
@@ -51,6 +54,7 @@ nav {
 
 .fondoNav {
   background-color: #1C1C1C;
+  margin-bottom: 30px;
 }
 
 .logoPagina {
