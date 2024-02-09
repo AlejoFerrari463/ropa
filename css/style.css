@@ -3,7 +3,7 @@
   justify-content: start;
   z-index: 999;
   position: sticky;
-  bottom: 1px;
+  top: 100px;
 }
 
 .botonWpp {
