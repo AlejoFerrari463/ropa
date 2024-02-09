@@ -1,11 +1,9 @@
 .contenedorWpp {
   display: grid;
-  justify-content: end;
+  justify-content: start;
   z-index: 999;
   position: sticky;
-  bottom: 30px;
-  margin-right: 10px;
-  margin-left: 99%;
+  bottom: 1px;
 }
 
 .botonWpp {
