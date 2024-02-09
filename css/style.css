@@ -3,7 +3,7 @@
   position: sticky;
   margin-right: 100%;
   z-index: 999;
-  top: 90%;
+  bottom: 30px;
 }
 
 .botonWpp {
@@ -207,26 +207,6 @@ nav {
   }
   h2 {
     font-size: 20px;
-  }
-}
-@media (min-height: 600px) {
-  .contenedorWpp {
-    top: 90%;
-  }
-}
-@media (max-height: 260px) {
-  .contenedorWpp {
-    top: 0%;
-  }
-}
-@media (min-height: 261px) and (max-height: 400px) {
-  .contenedorWpp {
-    top: 76%;
-  }
-}
-@media (min-height: 401px) and (max-height: 599px) {
-  .contenedorWpp {
-    top: 85%;
   }
 }
 /* MEDIA QUERIES - FIN */
