@@ -1,5 +1,11 @@
 /* HEADER - INICIO */
 
+.navbar {
+
+    background-color: black;
+    margin-bottom: 30px;
+
+}
 
 a {
 
@@ -17,13 +23,13 @@ nav {
 
 }
 
-.fondoNav {
+.nav-link {
 
-    background-color: $color-fondo;
-    margin-bottom: 30px;
-    
+    display: inline-block;
 
 }
+
+
 
 .logoPagina {
 
