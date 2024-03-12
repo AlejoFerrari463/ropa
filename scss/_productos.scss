@@ -8,7 +8,7 @@
 
 .card-img-top {
 
-    height: 60vh;
+    height: 400px;
     object-fit: contain;
 
 }
@@ -19,7 +19,28 @@
     
     margin-bottom: 40px;
 
+
 }
+
+.card-titulo {
+
+    font-size: 22px;
+    font-weight:500;
+
+}
+
+.card-precio-viejo {
+
+    font-size: 15px;
+
+}
+
+.card-precio-nuevo {
+
+    font-size: 20px;
+}
+
+
 
 .buttonCancel {
 
@@ -32,6 +53,9 @@
 
     padding: 10px;
 
+    font-size: 15px;
+
+    width: 100px;
     color: white;
 
     font-weight: bolder;
@@ -56,6 +80,9 @@
 
     padding: 10px;
 
+    font-size: 15px;
+
+    width: 100px;
     color: white;
 
     font-weight: bolder;

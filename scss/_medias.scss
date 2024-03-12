@@ -53,11 +53,86 @@
 
 }
 
+@media screen and (min-height: 0px) and (max-height: 460px){
+    
+    .card-img-top {
+
+        height: 140px;
+       
+    
+    }
+
+}
+
+@media screen and (min-height: 461px) and (max-height: 560px){
+    
+    .card-img-top {
+
+        height: 180px;
+       
+    
+    }
+
+}
+
+
+@media screen and (min-height: 561px) and (max-height: 790px){
+    
+    .card-img-top {
+
+        height: 280px;
+       
+    
+    }
+
+}
 
 
 
 
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+    
+    .card-titulo {
 
+        font-size: 15px;
+    
+    }
+    
+    .card-precio-viejo {
+    
+        font-size: 11px;
+    
+    }
+    
+    .card-precio-nuevo {
+    
+        font-size: 15px;
+    }
+
+    .button {
+
+       
+        padding: 10px;
+    
+        font-size: 12px;
+    
+        width: 90px;
+    
+    }
+
+    .buttonCancel {
+
+
+        padding: 10px;
+    
+        font-size: 12px;
+    
+        width: 90px;
+    
+    }
+
+
+}
 
 
 
