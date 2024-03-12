@@ -228,6 +228,7 @@ a {
 @media screen and (max-width: 991px) and (min-height: 301px) {
   .navbar-collapse {
     margin-right: 0;
+    justify-content: start;
   }
 }
 @media (max-width: 992px) {
