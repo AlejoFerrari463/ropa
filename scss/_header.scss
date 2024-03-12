@@ -18,11 +18,14 @@ a {
 
 }
 
-nav {
+.navbar-collapse {
 
     font-size: 20px;
-
     font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    margin-right: 105px;
 
 }
 
@@ -31,6 +34,7 @@ nav {
     display: inline-block;
 
 }
+
 
 
 
@@ -46,6 +50,7 @@ nav {
 .texto {
 
     color: $color-terciario;
+    text-align: start;
     
 }
 

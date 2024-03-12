@@ -48,9 +48,12 @@ a {
   text-transform: uppercase;
 }
 
-nav {
+.navbar-collapse {
   font-size: 20px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-right: 105px;
 }
 
 .nav-link {
@@ -64,6 +67,7 @@ nav {
 
 .texto {
   color: #F1CCBA;
+  text-align: start;
 }
 
 .texto:hover {
@@ -206,9 +210,25 @@ nav {
 }
 
 /* MEDIA QUERIES - INICIO */
-@media (min-width: 992px) {
-  .paddingCorrec {
-    padding-right: 110px;
+@media screen and (max-height: 300px) and (max-width: 991px) {
+  .navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .navbar-collapse {
+    justify-content: center;
+    margin-right: 0;
+  }
+  .nav-link {
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 991px) and (min-height: 301px) {
+  .navbar-collapse {
+    justify-content: end;
+    margin-right: 0px;
   }
 }
 @media (max-width: 992px) {

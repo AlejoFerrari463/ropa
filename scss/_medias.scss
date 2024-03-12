@@ -1,14 +1,47 @@
 /* MEDIA QUERIES - INICIO */
 
+@media screen and (max-height: 300px) and (max-width: 991px) {
 
-@media (min-width: 992px) {
+    .navbar-nav {
 
-    .paddingCorrec {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
 
-        padding-right: 110px;
+
+    }
+
+    .navbar-collapse {
+
+    
+        justify-content: center;
+        margin-right: 0;
+       
+        
+    }
+
+    .nav-link {
+
+        display: inline-block;
+        padding: 0 5px;
     
     }
 
+    
+
+}
+
+
+
+@media screen and (max-width: 991px) and (min-height: 301px) {
+
+    .navbar-collapse {
+
+        justify-content: end;
+        margin-right: 0px;
+        
+    
+    }
 
 
 }
