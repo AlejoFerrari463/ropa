@@ -37,10 +37,10 @@
 
     .navbar-collapse {
 
-       
+        display: grid;
+        grid-template-columns: 1fr;
         margin-right: 0;
-        justify-content: end;
-        
+        justify-items: end;
     
     }
 

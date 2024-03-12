@@ -227,8 +227,10 @@ a {
 }
 @media screen and (max-width: 991px) and (min-height: 301px) {
   .navbar-collapse {
+    display: grid;
+    grid-template-columns: 1fr;
     margin-right: 0;
-    justify-content: end;
+    justify-items: end;
   }
 }
 @media (max-width: 992px) {
