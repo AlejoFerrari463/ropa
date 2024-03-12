@@ -227,8 +227,10 @@ a {
 }
 @media screen and (max-width: 991px) and (min-height: 301px) {
   .navbar-collapse {
+    display: flex;
     justify-content: end;
-    margin-right: 0px;
+    text-align: end;
+    margin-right: 0;
   }
 }
 @media (max-width: 992px) {
