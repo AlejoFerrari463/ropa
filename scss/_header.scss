@@ -74,4 +74,48 @@ a {
 
 }
 
+.navbar-toggler:focus {
+
+    box-shadow: 0px 0px 10px $color-secundario ,-0px -0px 10px $color-secundario;
+
+}
+
+
+.tema-toogler {
+
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: red;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+}
+
+.tema-click {
+
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 15px;
+
+    transition: 0.5s left;
+
+
+
+}
+
+.tema-active {
+
+
+    left: 65px;
+
+    transition: 0.5s left;
+}
 /* HEADER - FIN */
