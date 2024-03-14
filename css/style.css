@@ -21,7 +21,7 @@
 }
 
 body {
-  background: #ddd;
+  background: white;
 }
 
 h1 {
@@ -38,9 +38,10 @@ h2 {
 /* GENERALES - FIN */
 /* HEADER - INICIO */
 .navbar {
-  background-color: black;
+  background-color: white;
   margin-bottom: 30px;
   z-index: 9999999;
+  box-shadow: 0px 0px 15px black;
 }
 
 a {
@@ -58,20 +59,17 @@ a {
 
 .nav-link {
   display: inline-block;
+  color: #F5844F;
+  text-align: start;
+}
+
+.nav-link:hover {
+  color: #F1CCBA;
 }
 
 .logoPagina {
   height: 70px;
   box-shadow: 1px 1px 12px #D65780;
-}
-
-.texto {
-  color: #F1CCBA;
-  text-align: start;
-}
-
-.texto:hover {
-  color: #F5844F;
 }
 
 .achicarIconoHamburgesa {
@@ -117,11 +115,17 @@ a {
 .carrouselTam {
   height: 55vh;
   object-fit: contain;
-  background-color: #EEEFED;
+  background-color: white;
 }
 
 .carousel {
-  margin: 0 50px;
+  margin: 40px 50px;
+  box-shadow: 0px 0px 20px black;
+  background-color: white;
+}
+
+.carousel-control-prev-icon {
+  background-color: red;
 }
 
 .resaltada {
@@ -266,7 +270,7 @@ a {
 }
 @media (max-width: 992px) {
   .carousel {
-    margin: 0 0;
+    margin: 40px 0;
   }
   .pa {
     padding: 20px 0px;
