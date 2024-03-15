@@ -36,6 +36,13 @@ toogler.addEventListener("click",()=>{
             element.style.background="black"
         })
 
+        const footer = document.querySelector("footer")
+        const span = footer.querySelector("span")
+        span.classList.replace("text-dark","text-light")
+
+        const p = footer.querySelector("p")
+        p.style.color = "white"
+
     }
 
 
@@ -59,6 +66,13 @@ toogler.addEventListener("click",()=>{
         carouselTam.forEach((element)=>{
             element.style.background="white"
         })
+
+        const footer = document.querySelector("footer")
+        const span = footer.querySelector("span")
+        span.classList.replace("text-light","text-dark")
+
+        const p = footer.querySelector("p")
+        p.style.color = "black"
         
 
     }
