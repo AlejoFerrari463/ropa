@@ -204,12 +204,11 @@ a {
 }
 
 .contenedorFomulario {
-  box-shadow: 2px 4px 10px black;
+  box-shadow: 2px 2px 8px black, -2px -2px 8px black;
 }
 
 .formulario {
-  border: none;
-  border-bottom: 2px solid #D65780;
+  border: 1px solid #D65780;
   width: 100%;
   padding: 5px;
 }
@@ -222,12 +221,18 @@ a {
 .textoArea {
   height: 300px;
   resize: none;
+  color: black;
 }
 
 .pregunta {
   display: inline-block;
   font-size: large;
   font-weight: bold;
+  color: black;
+}
+
+.respuesta {
+  color: black;
 }
 
 .pregunta:hover + .respuesta {
