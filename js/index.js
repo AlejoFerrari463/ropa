@@ -17,7 +17,6 @@ console.log(temaStorage)
 
 if (temaStorage=="dark"){
 
-    const currentPath = window.location.pathname;
 
 
     document.body.classList.replace("light","dark")
@@ -34,114 +33,141 @@ if (temaStorage=="dark"){
 
     // INDEX
     
-    if (currentPath == "/index.html"){
+  
 
-        const carousel = document.querySelector(".carousel")
-    carousel.style.background = "#1C1C1C"
-    carousel.style.boxShadow = "0px 0px 20px white"
-    const carouselTam = carousel.querySelectorAll(".carrouselTam")
-    carouselTam.forEach((element)=>{
-        element.style.background="#1C1C1C"
-    })
+    const carousel = document.querySelector(".carousel")
+    if (carousel){
 
-    const footer = document.querySelector("footer")
-    const span = footer.querySelector("span")
-    span.classList.replace("text-dark","text-light")
-
-    const p = footer.querySelector("p")
-    p.style.color = "white"
+        carousel.style.background = "#1C1C1C"
+        carousel.style.boxShadow = "0px 0px 20px white"
+        const carouselTam = carousel.querySelectorAll(".carrouselTam")
+        carouselTam.forEach((element)=>{
+            element.style.background="#1C1C1C"
+        })
 
     }
+   
+    const footer = document.querySelector("footer")
+
+    if (footer){
+
+        const span = footer.querySelector("span")
+        span.classList.replace("text-dark","text-light")
+    
+        const p = footer.querySelector("p")
+        p.style.color = "white"
+
+    }
+   
+
+    
 
     // CARDS
-    if (currentPath == "/html/ofertas.html" || currentPath == "/html/hombres.html" || currentPath == "/html/mujeres.html"){
+    
 
         const cards = document.querySelectorAll(".card")
-        cards.forEach((element)=>{
-            element.style.background="#1C1C1C"
-            element.style.boxShadow="0px 0px 10px white"
-            element.style.color = "white"
-        })
+
+        if (cards){
+            
+
+            cards.forEach((element)=>{
+                element.style.background="#1C1C1C"
+                element.style.boxShadow="0px 0px 10px white"
+                element.style.color = "white"
+            })
+
+        }
+
+       
 
 
-    }
+    
     
     // CONTACTO
-    if (currentPath == "/html/contacto.html"){
+    
 
         const formulario = document.querySelector(".contenedorFomulario")
-        formulario.style.boxShadow = "-2px -2px 8px white,-2px 2px 8px white"
 
-        const preguntas = document.querySelectorAll(".pregunta")
-        preguntas.forEach((element)=>{
-            element.style.color="white"
-        })
-        const respuestas = document.querySelectorAll(".respuesta")
-        respuestas.forEach((element)=>{
-            element.style.color="white"
-        })
+        if (formulario){
 
-        const inputs = document.querySelectorAll("input")
-        inputs.forEach((element)=>{
-            element.style.background="#1C1C1C"
-            
-            element.addEventListener("click",()=>{
-                if (element.contains(event.target)==true){
-                    element.style.background="linear-gradient(to top, #F7D8E2, #1C1C1C)"
+            formulario.style.boxShadow = "-2px -2px 8px white,-2px 2px 8px white"
 
-
-                }
-
-            
+            const preguntas = document.querySelectorAll(".pregunta")
+            preguntas.forEach((element)=>{
+                element.style.color="white"
             })
-
+            const respuestas = document.querySelectorAll(".respuesta")
+            respuestas.forEach((element)=>{
+                element.style.color="white"
+            })
+    
+            const inputs = document.querySelectorAll("input")
+            inputs.forEach((element)=>{
+                element.style.background="#1C1C1C"
+                
+                element.addEventListener("click",()=>{
+                    if (element.contains(event.target)==true){
+                        element.style.background="linear-gradient(to top, #F7D8E2, #1C1C1C)"
+    
+    
+                    }
+    
+                
+                })
+    
+                document.addEventListener("click",()=>{
+    
+                    if (document.contains(event.target)&&!element.contains(event.target)){
+                        element.style.background="#1C1C1C"
+    
+                    }
+    
+                })
+    
+    
+                
+            })
+            
+    
+            const textoArea = document.querySelector("textarea")
+            textoArea.style.background="#1C1C1C"
+            textoArea.style.color="white"
+            textoArea.addEventListener("click",()=>{
+    
+                if (textoArea.contains(event.target)==true){
+                    textoArea.style.background="linear-gradient(to top, #F7D8E2, #1C1C1C)"
+    
+    
+                }
+    
+    
+            })
+    
             document.addEventListener("click",()=>{
-
-                if (document.contains(event.target)&&!element.contains(event.target)){
-                    element.style.background="#1C1C1C"
-
+    
+                if (document.contains(event.target)&&!textoArea.contains(event.target)){
+                    textoArea.style.background="#1C1C1C"
+    
                 }
-
+    
             })
 
 
-            
-        })
+
+
+        }
+
         
-
-        const textoArea = document.querySelector("textarea")
-        textoArea.style.background="#1C1C1C"
-        textoArea.style.color="white"
-        textoArea.addEventListener("click",()=>{
-
-            if (textoArea.contains(event.target)==true){
-                textoArea.style.background="linear-gradient(to top, #F7D8E2, #1C1C1C)"
-
-
-            }
-
-
-        })
-
-        document.addEventListener("click",()=>{
-
-            if (document.contains(event.target)&&!textoArea.contains(event.target)){
-                textoArea.style.background="#1C1C1C"
-
-            }
-
-        })
         
        
-    }
+    
     
 }
 
 else {
 
-    const currentPath = window.location.pathname;
 
-    document.body.classList.replace("dark","light")
+        document.body.classList.replace("dark","light")
         document.body.style.background="white"
 
         const header = document.querySelector(".navbar")
@@ -152,46 +178,73 @@ else {
         const active = document.querySelector(".tema-click")
         active.classList.remove("tema-active")
 
-        if (currentPath == "/index.html"){
+       
 
             const carousel = document.querySelector(".carousel")
-            carousel.style.background = "white"
+
+            if (carousel){
+
+                carousel.style.background = "white"
             carousel.style.boxShadow = "0px 0px 20px black"
             const carouselTam = carousel.querySelectorAll(".carrouselTam")
             carouselTam.forEach((element)=>{
                 element.style.background="white"
             })
+
+
+
+
+            }
+            
     
             const footer = document.querySelector("footer")
-            const span = footer.querySelector("span")
-            span.classList.replace("text-light","text-dark")
-    
-            const p = footer.querySelector("p")
-            p.style.color = "black"
+
+            if (footer){
+
+                const span = footer.querySelector("span")
+                span.classList.replace("text-light","text-dark")
+        
+                const p = footer.querySelector("p")
+                p.style.color = "black"
+
+            }
+
+           
 
 
-        }
+        
 
          // CARDS
-         if (currentPath == "/html/ofertas.html" || currentPath == "/html/hombres.html" || currentPath == "/html/mujeres.html"){
+        
 
             const cards = document.querySelectorAll(".card")
-            cards.forEach((element)=>{
-                element.style.background="white"
-                element.style.boxShadow="0px 0px 10px black"
-                element.style.color = "black"
-            })
+
+            if (cards){
+
+                cards.forEach((element)=>{
+                    element.style.background="white"
+                    element.style.boxShadow="0px 0px 10px black"
+                    element.style.color = "black"
+                })
+
+            }
+
+           
 
 
-        }
+       
 
  
       // CONTACTO
-      if (currentPath == "/html/contacto.html"){
+     
 
           
         const formulario = document.querySelector(".contenedorFomulario")
-        formulario.style.boxShadow = "2px 2px 8px black,-2px -2px 8px black"
+
+
+        if (formulario){
+
+            formulario.style.boxShadow = "2px 2px 8px black,-2px -2px 8px black"
 
         const preguntas = document.querySelectorAll(".pregunta")
         preguntas.forEach((element)=>{
@@ -252,9 +305,13 @@ else {
             }
 
         })
+
+        }
+
+    
         
        
-    }
+    
     
 
 }
@@ -266,7 +323,6 @@ toogler.addEventListener("click",()=>{
 
     const tema = document.querySelector(".light")
 
-    const currentPath = window.location.pathname;
 
     if(tema){
 
@@ -287,43 +343,70 @@ toogler.addEventListener("click",()=>{
 
         // INDEX
         
-        if (currentPath == "/index.html"){
+        
 
-            const carousel = document.querySelector(".carousel")
-        carousel.style.background = "#1C1C1C"
-        carousel.style.boxShadow = "0px 0px 20px white"
-        const carouselTam = carousel.querySelectorAll(".carrouselTam")
-        carouselTam.forEach((element)=>{
-            element.style.background="#1C1C1C"
-        })
+        const carousel = document.querySelector(".carousel")
 
-        const footer = document.querySelector("footer")
-        const span = footer.querySelector("span")
-        span.classList.replace("text-dark","text-light")
+        if(carousel){
 
-        const p = footer.querySelector("p")
-        p.style.color = "white"
-
-        }
-
-        // CARDS
-        if (currentPath == "/html/ofertas.html" || currentPath == "/html/hombres.html" || currentPath == "/html/mujeres.html"){
-
-            const cards = document.querySelectorAll(".card")
-            cards.forEach((element)=>{
+            carousel.style.background = "#1C1C1C"
+            carousel.style.boxShadow = "0px 0px 20px white"
+            const carouselTam = carousel.querySelectorAll(".carrouselTam")
+            carouselTam.forEach((element)=>{
                 element.style.background="#1C1C1C"
-                element.style.boxShadow="0px 0px 10px white"
-                element.style.color = "white"
             })
 
+        }
+
+       
+
+        const footer = document.querySelector("footer")
+
+
+        if (footer){
+
+            const span = footer.querySelector("span")
+            span.classList.replace("text-dark","text-light")
+    
+            const p = footer.querySelector("p")
+            p.style.color = "white"
 
         }
+
+      
+
+       
+
+        // CARDS
+    
+
+            const cards = document.querySelectorAll(".card")
+
+
+            if (cards){
+
+
+                cards.forEach((element)=>{
+                    element.style.background="#1C1C1C"
+                    element.style.boxShadow="0px 0px 10px white"
+                    element.style.color = "white"
+                })
+    
+
+            }
+
+          
+
+        
         
         // CONTACTO
-        if (currentPath == "/html/contacto.html"){
+        
 
             const formulario = document.querySelector(".contenedorFomulario")
-            formulario.style.boxShadow = "-2px -2px 8px white,-2px 2px 8px white"
+
+            if(formulario){
+
+                formulario.style.boxShadow = "-2px -2px 8px white,-2px 2px 8px white"
 
             const preguntas = document.querySelectorAll(".pregunta")
             preguntas.forEach((element)=>{
@@ -384,9 +467,13 @@ toogler.addEventListener("click",()=>{
                 }
 
             })
+
+            }
+
+            
             
            
-        }
+        
 
     
 
@@ -409,46 +496,71 @@ toogler.addEventListener("click",()=>{
         active.style.transition = "0.5s left";
         active.classList.remove("tema-active")
 
-        if (currentPath == "/index.html"){
+       
+
 
             const carousel = document.querySelector(".carousel")
-            carousel.style.background = "white"
-            carousel.style.boxShadow = "0px 0px 20px black"
-            const carouselTam = carousel.querySelectorAll(".carrouselTam")
-            carouselTam.forEach((element)=>{
-                element.style.background="white"
-            })
+
+            if (carousel){
+
+                carousel.style.background = "white"
+                carousel.style.boxShadow = "0px 0px 20px black"
+                const carouselTam = carousel.querySelectorAll(".carrouselTam")
+                carouselTam.forEach((element)=>{
+                    element.style.background="white"
+                })
+
+            }
+           
+    
     
             const footer = document.querySelector("footer")
-            const span = footer.querySelector("span")
-            span.classList.replace("text-light","text-dark")
+
+            if(footer){
+
+                const span = footer.querySelector("span")
+                span.classList.replace("text-light","text-dark")
+        
+                const p = footer.querySelector("p")
+                p.style.color = "black"
     
-            const p = footer.querySelector("p")
-            p.style.color = "black"
+    
 
+            }
 
-        }
+         
+       
 
          // CARDS
-         if (currentPath == "/html/ofertas.html" || currentPath == "/html/hombres.html" || currentPath == "/html/mujeres.html"){
+         
 
             const cards = document.querySelectorAll(".card")
-            cards.forEach((element)=>{
-                element.style.background="white"
-                element.style.boxShadow="0px 0px 10px black"
-                element.style.color = "black"
-            })
+
+            if (cards){
+
+                cards.forEach((element)=>{
+                    element.style.background="white"
+                    element.style.boxShadow="0px 0px 10px black"
+                    element.style.color = "black"
+                })
+
+            }
+            
 
 
-        }
+        
 
  
       // CONTACTO
-      if (currentPath == "/html/contacto.html"){
+      
 
           
         const formulario = document.querySelector(".contenedorFomulario")
-        formulario.style.boxShadow = "2px 2px 8px black,-2px -2px 8px black"
+
+
+        if (formulario){
+
+            formulario.style.boxShadow = "2px 2px 8px black,-2px -2px 8px black"
 
         const preguntas = document.querySelectorAll(".pregunta")
         preguntas.forEach((element)=>{
@@ -510,8 +622,13 @@ toogler.addEventListener("click",()=>{
 
         })
         
+
+
+        }
+
+        
        
-    }
+    
         
 
     }
