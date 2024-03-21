@@ -83,7 +83,7 @@ a {
     right: 20px;
     width: 90px;
     height: 40px;
-    background-color: red;
+    background-color: $color-secundario;
     border-radius: 15px;
 
     cursor: pointer;
@@ -97,7 +97,7 @@ a {
     left: 5px;
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: white;
     border-radius: 15px;
 
     transition: 0.5s left;

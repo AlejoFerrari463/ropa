@@ -30,6 +30,9 @@ if (temaStorage=="dark"){
     active.style.transition = "none";
     active.classList.add("tema-active")
     
+    const puntoToogler = document.querySelector(".tema-click")
+    puntoToogler.style.background = "#1C1C1C"
+
 
     // INDEX
     
@@ -177,6 +180,9 @@ else {
 
         const active = document.querySelector(".tema-click")
         active.classList.remove("tema-active")
+
+        const puntoToogler = document.querySelector(".tema-click")
+        puntoToogler.style.background = "white"
 
        
 
@@ -341,6 +347,10 @@ toogler.addEventListener("click",()=>{
         const active = document.querySelector(".tema-click")
         active.classList.add("tema-active")
 
+        const puntoToogler = document.querySelector(".tema-click")
+        puntoToogler.style.background = "#1C1C1C"
+
+
         // INDEX
         
         
@@ -496,6 +506,8 @@ toogler.addEventListener("click",()=>{
         active.style.transition = "0.5s left";
         active.classList.remove("tema-active")
 
+        const puntoToogler = document.querySelector(".tema-click")
+        puntoToogler.style.background = "white"
        
 
 
